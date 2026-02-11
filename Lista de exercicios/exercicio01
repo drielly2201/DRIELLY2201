@@ -2,7 +2,8 @@ Exercicio 01                         03/02/2026  turma:2A
                                                                             Adrielly tavernis de moura
 
 1. O que é o Node.js?
-é um ambiente de execução (runtime) JavaScript de código aberto e multiplataforma, baseado no motor V8 do Google Chrome, que permite executar código JavaScript no lado do servidor (back-end), fora do navegador
+é um ambiente de execução (runtime) JavaScript de código aberto e multiplataforma, baseado no motor V8 do Google Chrome,
+que permite executar código JavaScript no lado do servidor (back-end), fora do navegador.
 
 2. O Node.js usa qual linguagem de programação?
 node.js utiliza a linguagem de programação JavaScript. 
@@ -11,21 +12,27 @@ node.js utiliza a linguagem de programação JavaScript.
 O node.js roda fora do navegador 
 
 4. Para que serve o Node.js?
-O Node.js serve principalmente para executar código JavaScript no lado do servidor (back-end), permitindo a criação de aplicações web, APIs rápidas, ferramentas de linha de comando e scripts de rede
+O Node.js serve principalmente para executar código JavaScript no lado do servidor (back-end),
+permitindo a criação de aplicações web, APIs rápidas, ferramentas de linha de comando e scripts de rede.
 
 5. Qual comando é usado para executar um arquivo Node.js no terminal?
-O comando utilizado para executar um arquivo Node.js no terminal é node <nome-do-arquivo.js>. Após instalar o Node.js, basta navegar até a pasta onde o arquivo está salvo e digitar o comando no terminal (Prompt de Comando, PowerShell, ou Terminal integrado do VS Code). 
+O comando utilizado para executar um arquivo Node.js no terminal é node <nome-do-arquivo.js>.Após instalar o Node.js,
+basta navegar até a pasta onde o arquivo está salvo e digitar o comando no terminal (Prompt de Comando, PowerShell, ou Terminal integrado do VS Code). 
 
 6. O que é o npm?
-O npm (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js e o maior registro de software do mundo, com mais de 2 milhões de pacotes de código aberto. Ele facilita a instalação, compartilhamento e gerenciamento de dependências de projetos JavaScript, sendo composto por uma CLI (linha de comando), um repositório online e um site. 
+O npm (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js e o maior registro de software do mundo, com mais de 2 milhões de pacotes de código aberto.
+Ele facilita a instalação, compartilhamento e gerenciamento de dependências de projetos JavaScript, sendo composto por uma CLI (linha de comando), um repositório online e um site. 
 
 7. O que significa a palavra módulo no Node.js?
 No Node.js, um módulo é um arquivo JavaScript, ou conjunto de arquivos, reutilizável e independente, que encapsula funcionalidades específicas para organizar o código e evitar poluição do escopo global
+
 8. O Node.js é mais usado no front-end ou no back-end?
 O Node.js é utilizado majoritariamente no back-end (servidor), permitindo executar JavaScript fora do navegador para criar APIs, microsserviços e aplicações em tempo real de alta performance
 
 9. O que é o arquivo package.json?
-O package.json é o arquivo central de configuração e manifesto de projetos Node.js e JavaScript, armazenando metadados como nome, versão, autor e licença, além de gerenciar dependências de bibliotecas (dependencies, devDependencies) e scripts de automação. Essencial para o gerenciamento de pacotes via npm ou Yarn, ele garante a consistência do ambiente. 
+O package.json é o arquivo central de configuração e manifesto de projetos Node.js e JavaScript, armazenando metadados como nome, versão, autor e licença,
+além de gerenciar dependências de bibliotecas (dependencies, devDependencies) e scripts de automação. Essencial para o gerenciamento de pacotes via npm ou Yarn, ele garante a consistência do ambiente. 
 
 10. O Node.js é gratuito ou pago?
-O Node.js é totalmente gratuito e de código aberto (open-source). Desenvolvedores podem baixar, usar e modificar o ambiente de execução JavaScript sem pagar licenças. Além disso, o gerenciador de pacotes npm, usado com ele, possui milhares de bibliotecas gratuitas. 
+O Node.js é totalmente gratuito e de código aberto (open-source). Desenvolvedores podem baixar, usar e modificar o ambiente de execução JavaScript sem pagar licenças.
+Além disso, o gerenciador de pacotes npm, usado com ele, possui milhares de bibliotecas gratuitas. 
