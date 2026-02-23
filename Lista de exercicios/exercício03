@@ -4,50 +4,65 @@ Adrielly tavernis                                 09/02/26        turma: 2 anoA
 
 1. Escreva um programa que mostre na tela a seguinte contagem: 6 7 8 9 10 11
 Acabou!
-for i in range(6, 12):
-    print(i, end=" ")
-print("\nAcabou!")
+// 1. Contagem de 6 até 11
+for (let i = 6; i <= 11; i++) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 2. Faça um algoritmo que mostre na tela a seguinte contagem: 10 9 8 7 6 5 4 3
 Acabou!
-for i in range(10, 2, -1):
-    print(i, end=" ")
-print("\nAcabou!")
+// 2. Contagem de 10 até 3 (regressiva)
+for (let i = 10; i >= 3; i--) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 3. Crie um aplicativo que mostre na tela a seguinte contagem: 0 3 6 9 12 15 18
 Acabou!
-for i in range(0, 19, 3):
-    print(i, end=" ")
-print("\nAcabou!")
+// 3. Contagem de 0 até 18 pulando de 3 em 3
+for (let i = 0; i <= 18; i += 3) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 4. Desenvolva um programa que mostre na tela a seguinte contagem: 100 95 90 85 80
 ... 0 Acabou!
-for i in range(100, -1, -5):
-    print(i, end=" ")
-print("\nAcabou!")
+// 3. Contagem de 0 até 18 pulando de 3 em 3
+for (let i = 0; i <= 18; i += 3) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 5. Faça um algoritmo que pergunte ao usuário um número inteiro e positivo qualquer e
 mostre uma contagem até esse valor: Ex: Digite um valor: 35 Contagem: 1 2 3 4 5 6
 7 ... 33 34 35 Acabou!
 valor = int(input("Digite um valor: "))
+// 5. Contagem até número digitado
+const prompt = require("prompt-sync")();
+let valor = Number(prompt("Digite um valor inteiro positivo: "));
 
-for i in range(1, valor + 1):
-    print(i, end=" ")
-print("\nAcabou!")
+for (let i = 1; i <= valor; i++) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 6. Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1,
 marcando os números que forem divisíveis por 4, exatamente como mostrado
 abaixo: 30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]...
-for i in range(30, 0, -1):
-    if i % 4 == 0:
-        print(f"[{i}]", end=" ")
-    else:
-        print(i, end=" ")
+// 6. Contagem regressiva de 30 até 1 marcando divisíveis por 4
+for (let i = 30; i >= 1; i--) {
+    if (i % 4 === 0) {
+        process.stdout.write("[" + i + "] ");
+    } else {
+        process.stdout.write(i + " ");
+    }
+}
 
 
 7. Crie um algoritmo que leia o valor inicial da contagem, o valor final e o incremento,
@@ -57,9 +72,15 @@ inicio = int(input("Digite o primeiro valor: "))
 fim = int(input("Digite o último valor: "))
 inc = int(input("Digite o incremento: "))
 
-for i in range(inicio, fim + 1, inc):
-    print(i, end=" ")
-print("\nAcabou!")
+// 7. Contagem com valor inicial, final e incremento
+let inicio = Number(prompt("Digite o primeiro valor: "));
+let fim = Number(prompt("Digite o último valor: "));
+let incremento = Number(prompt("Digite o incremento: "));
+
+for (let i = inicio; i <= fim; i += incremento) {
+    process.stdout.write(i + " ");
+}
+console.log("\nAcabou!");
 
 
 8. O programa acima vai ter um problema quando digitarmos o primeiro valor maior
@@ -69,43 +90,59 @@ inicio = int(input("Digite o primeiro valor: "))
 fim = int(input("Digite o último valor: "))
 inc = int(input("Digite o incremento: "))
 
-if inicio < fim:
-    for i in range(inicio, fim + 1, inc):
-        print(i, end=" ")
-else:
-    for i in range(inicio, fim - 1, -inc):
-        print(i, end=" ")
+// 8. Funciona tanto crescente quanto decrescente
+inicio = Number(prompt("Digite o primeiro valor: "));
+fim = Number(prompt("Digite o último valor: "));
+incremento = Number(prompt("Digite o incremento: "));
 
-print("\nAcabou!")
+if (inicio < fim) {
+    for (let i = inicio; i <= fim; i += incremento) {
+        process.stdout.write(i + " ");
+    }
+} else {
+    for (let i = inicio; i >= fim; i -= incremento) {
+        process.stdout.write(i + " ");
+    }
+}
+console.log("\nAcabou!");
+
 
 
 9. Crie um programa que calcule e mostre na tela o resultado da soma entre 6 + 8 + 10
 + 12 + 14 + ... + 98 + 100.
 soma = 0
-for i in range(6, 101, 2):
-    soma += i
+// 9. Soma de 6 até 100 (pares)
+let soma = 0;
+for (let i = 6; i <= 100; i += 2) {
+    soma += i;
+}
+console.log("Resultado:", soma);
 
-print("Resultado da soma:", soma)
 
 
 10. Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 + 450 +
 400 + 350 + 300 + ... + 50 + 0.
 soma = 0
-for i in range(500, -1, -50):
-    soma += i
+// 10. Soma regressiva de 500 até 0 pulando de 50
+soma = 0;
+for (let i = 500; i >= 0; i -= 50) {
+    soma += i;
+}
+console.log("Resultado:", soma);
 
-print("Resultado da soma:", soma)
 
 
 11. Faça um programa que leia 7 números inteiros e no final mostre o somatório entre
 Eles.
 soma = 0
+// 11. Soma de 7 números
+soma = 0;
+for (let i = 1; i <= 7; i++) {
+    let num = Number(prompt("Digite um número: "));
+    soma += num;
+}
+console.log("Somatório:", soma);
 
-for i in range(7):
-    num = int(input("Digite um número: "))
-    soma += num
-
-print("Somatório:", soma)
 
 
 12. Crie um programa que leia 6 números inteiros e no final mostre quantos deles são
@@ -113,154 +150,144 @@ pares e quantos são ímpares.
 pares = 0
 impares = 0
 
-for i in range(6):
-    num = int(input("Digite um número: "))
-    if num % 2 == 0:
-        pares += 1
-    else:
-        impares += 1
+// 12. Contar pares e ímpares
+let pares = 0, impares = 0;
 
-print("Pares:", pares)
-print("Ímpares:", impares)
+for (let i = 1; i <= 6; i++) {
+    let num = Number(prompt("Digite um número: "));
+    if (num % 2 === 0) pares++;
+    else impares++;
+}
+
+console.log("Pares:", pares);
+console.log("Ímpares:", impares);
+
 
 
 13. Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e mostre
 na tela:
- a) Quais foram os números sorteados
-sorteados = []
-acima_5 = 0
-div_3 = 0
- b) Quantos números estão acima de 5
-for i in range(20):
-num = random.randint(0, 10)
-sorteados.append(num)
-if num > 5:
-acima_5 += 1
-if num % 3 == 0:
-div_3 += 1
- c) Quantos números são divisíveis por 3
-print(f"a) Números sorteados: {sorteados}")
-print(f"b) Quantos números estão acima de 5: {acima_5}")
-print(f"c) Quantos números são divisíveis por 3: {div_3}")
-14. Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela qual foi o
-maior e qual foi o menor preço digitados.
-precos = []
+ // 13. Sorteio de 20 números entre 0 e 10
+let acima5 = 0, divisivel3 = 0;
 
-for i in range(8):
-    valor = float(input(f"Digite o preço do produto {i+1}: "))
-    precos.append(valor)
+for (let i = 1; i <= 20; i++) {
+    let num = Math.floor(Math.random() * 11);
+    process.stdout.write(num + " ");
 
-print("Maior preço:", max(precos))
-print("Menor preço:", min(precos))
+    if (num > 5) acima5++;
+    if (num % 3 === 0) divisivel3++;
+}
+
+console.log("\nAcima de 5:", acima5);
+console.log("Divisíveis por 3:", divisivel3);
+
+
+14.Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela qual foi o maior e qual foi o menor preço digitados.
+// 14. Maior e menor preço
+let maior = 0;
+let menor = Infinity;
+
+for (let i = 1; i <= 8; i++) {
+    let preco = Number(prompt("Digite o preço: "));
+    if (preco > maior) maior = preco;
+    if (preco < menor) menor = preco;
+}
+
+console.log("Maior preço:", maior);
+console.log("Menor preço:", menor);
+
 
 
 15. Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
- a) Qual é a média de idade do grupo
-Soma para média
-      somaIdades = somaIdades + idade
+ // 15. Idades
+let somaIdade = 0, maiorIdade = 0, mais18 = 0, menos5 = 0;
 
- b) Quantas pessoas tem mais de 18 anos
-Contador de maiores de 18
-      se (idade > 18) {
-        pessoasMaiores18 = pessoasMaiores18 + 1
-     }
+for (let i = 1; i <= 10; i++) {
+    let idade = Number(prompt("Digite a idade: "));
+    somaIdade += idade;
 
- c) Quantas pessoas tem menos de 5 anos
-ontador de menores de 5
-      se (idade < 5) {
-        pessoasMenores5 = pessoasMenores5 + 1
-      }
+    if (idade > maiorIdade) maiorIdade = idade;
+    if (idade > 18) mais18++;
+    if (idade < 5) menos5++;
+}
 
-d) Qual foi a maior idade lida
-Identificador de maior idade
-      se (cont == 1) {
-        maiorIdade = idade
-      } senao {
-        se (idade > maiorIdade) {
-          maiorIdade = idade
-        }
+console.log("Média:", somaIdade / 10);
+console.log("Maiores de 18:", mais18);
+console.log("Menores de 5:", menos5);
+console.log("Maior idade:", maiorIdade);
 
-16. Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final: a)
-Quantos homens foram cadastrados b) Quantas mulheres foram cadastradas c) A
-média de idade do grupo d) A média de idade dos homens e) Quantas mulheres tem
-mais de 20 anos 
-homens = 0
-mulheres = 0
-idade_total = 0
-idade_homens = 0
-mulheres_20 = 0
 
-for i in range(5):
-    idade = int(input("Idade: "))
-    sexo = input("Sexo (M/F): ").upper()
+16. Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final: 
+// 16. Idade e sexo
+let homens = 0, mulheres = 0, somaGrupo = 0, somaHomens = 0, mulheres20 = 0;
 
-    idade_total += idade
+for (let i = 1; i <= 5; i++) {
+    let idade = Number(prompt("Idade: "));
+    let sexo = prompt("Sexo (M/F): ").toUpperCase();
 
-    if sexo == "M":
-        homens += 1
-        idade_homens += idade
-    elif sexo == "F":
-        mulheres += 1
-        if idade > 20:
-            mulheres_20 += 1
+    somaGrupo += idade;
 
-media = idade_total / 5
-media_homens = idade_homens / homens if homens > 0 else 0
+    if (sexo === "M") {
+        homens++;
+        somaHomens += idade;
+    } else {
+        mulheres++;
+        if (idade > 20) mulheres20++;
+    }
+}
 
-print("Homens:", homens)
-print("Mulheres:", mulheres)
-print("Média de idade:", media)
-print("Média de idade dos homens:", media_homens)
-print("Mulheres com mais de 20:", mulheres_20)
+console.log("Homens:", homens);
+console.log("Mulheres:", mulheres);
+console.log("Média grupo:", somaGrupo / 5);
+console.log("Média homens:", homens > 0 ? somaHomens / homens : 0);
+console.log("Mulheres > 20:", mulheres20);
+
 
 
 17. Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando no
-final: a) Qual foi a média de altura do grupo b) Quantas pessoas pesam mais de
-90Kg c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m d)
-Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
-altura_total = 0
-mais_90 = 0
-menos_50_menos_160 = 0
-mais_190_mais_100 = 0
+final: 
+// 17. Peso e altura
+let somaAltura = 0, mais90 = 0, menos50e160 = 0, mais190e100 = 0;
 
-for i in range(7):
-    peso = float(input("Peso (kg): "))
-    altura = float(input("Altura (m): "))
+for (let i = 1; i <= 7; i++) {
+    let peso = Number(prompt("Peso: "));
+    let altura = Number(prompt("Altura: "));
 
-    altura_total += altura
+    somaAltura += altura;
 
-    if peso > 90:
-        mais_90 += 1
-    if peso < 50 and altura < 1.60:
-        menos_50_menos_160 += 1
-    if altura > 1.90 and peso > 100:
-        mais_190_mais_100 += 1
+    if (peso > 90) mais90++;
+    if (peso < 50 && altura < 1.60) menos50e160++;
+    if (altura > 1.90 && peso > 100) mais190e100++;
+}
 
-media_altura = altura_total / 7
+console.log("Média altura:", somaAltura / 7);
+console.log("Mais de 90kg:", mais90);
+console.log("Menos 50kg e <1.60:", menos50e160);
+console.log("Altura >1.90 e peso >100:", mais190e100);
 
-print("Média de altura:", media_altura)
-print("Pessoas com mais de 90kg:", mais_90)
-print("Menos de 50kg e <1.60m:", menos_50_menos_160)
-print("Mais de 1.90m e >100kg:", mais_190_mais_100)
 
 
 18. $$DESAFIO$$
 Vamos melhorar o jogo. A partir de agora, o
 computador vai sortear um número entre 1 e 10 e o jogador vai ter 4 tentativas para
 tentar acertar.
-import random
+// 18. Jogo de adivinhação
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let tentativas = 4;
+let acertou = false;
 
-numero = random.randint(1, 10)
-tentativas = 4
+console.log("Tente adivinhar o número entre 1 e 10!");
+for (let i = 1; i <= tentativas; i++) {
+    let palpite = Number(prompt("Tentativa " + i + ": "));
 
-for i in range(tentativas):
-    chute = int(input("Tente adivinhar (1 a 10): "))
+    if (palpite === numeroSecreto) {
+        console.log("Parabéns! Você acertou!");
+        acertou = true;
+        break;
+    } else {
+        console.log("Errou!");
+    }
+}
 
-    if chute == numero:
-        print("🎉 Parabéns! Você acertou!")
-        break
-    else:
-        print("❌ Errou!")
-
-if chute != numero:
-    print("O número era:", numero)
+if (!acertou) {
+    console.log("Suas tentativas acabaram. O número era:", numeroSecreto);
+}
