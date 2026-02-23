@@ -2,8 +2,7 @@ Exercicio 01                         03/02/2026  turma:2A
                                                                             Adrielly tavernis de moura
 
 1. O que é o Node.js?
-é um ambiente de execução (runtime) JavaScript de código aberto e multiplataforma, baseado no motor V8 do Google Chrome,
-que permite executar código JavaScript no lado do servidor (back-end), fora do navegador.
+O Node.js é um ambiente de execução que permite rodar JavaScript fora do navegador, principalmente no servidor.
 
 2. O Node.js usa qual linguagem de programação?
 node.js utiliza a linguagem de programação JavaScript. 
