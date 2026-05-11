@@ -1,0 +1,70 @@
+Aliuno(a): adrielly tavernis 2 ano A
+
+. Parte 1-Interpretação 
+
+.Responda:
+a. Qual rota é privada?
+A rota privada e quando um usuário e bem vindo, porque ele está no login dele, na privacidade.
+
+b. O que acontece se o usuário não estiver legado?
+Ele recebe um acesso negado, pq ele n consegui termina o login.
+
+c. Qual mensagem aparece? 
+return'Acesso negado'
+
+. Parte 2-Situação real 
+. Explique
+a. Como aplicativos de banco impedem que outra pessoa acesse sua conta?
+
+Os aplicativos de banco utilizam múltiplas camadas de segurança para proteger a conta,
+combinando autenticação física, verificação de identidade e análise comportamental.
+
+
+. Parte 3-Fluxo de autenticação 
+. Complete e explique:
+ . usuário > Login > VERIFICAÇÂO > Acesso liberado 
+
+ Autenticação é o processo utilizado pelos sistemas paraverificar a identidade de um usuário. Quando fazemos login em um aplicativo,
+ o sistema verifica:
+. se o usuário existe
+. se a senha está correta
+. se aquela pessoa pode acessar determinadas página.
+. Esse processo acontece em:
+. bancos, emails. Redes sociais, lojas virtuais. Plataformas de streaming
+
+
+ .Parte 4-Desenvolvimento 
+  . Passo 1: Copiar o código apresentado na aula.
+  
+   from flask import Flask
+
+   app = Flask(_free fire_)
+
+   usuario-logado = False
+
+   @app.route('/')
+   def inicio():
+      return 'Página pública'
+
+  @app.route('/free fire')
+    def login():
+       global usuario_logado 
+       usuario-logado = True
+       return 'Usuário logado'
+
+ @app.route('/adrielly')
+ def perfil(): free fire
+    if usuario_logado
+    return 'Bem-vindo ao perfil free fire '
+ else:
+    return 'Acesso negado'
+
+ app.run(debuy=true)   
+
+
+  . Passo 2: Altera: nome da rota /perfil, mensagens exibidas e nome da página pública.
+  . Passo 3: Criar: uma rota pública e uma rota privada 
+
+
+
+  
