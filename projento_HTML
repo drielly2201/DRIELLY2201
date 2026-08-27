@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIPAID</title>
+</head>
+<body>
+    <header id="navbar">
+        <div id="logo-area">
+         <div id="logo">B</div>
+         <div id="logo-nome">BIPAID</div>
+        </div>
+
+        <nav>
+             <a href="login.html" class="login">Entrar</a>
+             <a href="login.html" class="cadastro">criar conta</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pricipal">
+            <h1> Você fala. <br> A BIPAID organiza.</h1>
+        </section>
+        <p>Conte em uma frase o que precisa resolver e a BIPAID  transforma em tarefas,<br> 
+            lembretes, gastos e metas-tudo salvo com segurança na sua conta.
+        </p>
+
+    </main>
+</body>
+</html>
+
+
+
+    
+
+
+
+
